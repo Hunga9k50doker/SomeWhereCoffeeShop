@@ -1,0 +1,271 @@
+html {
+  @font-face {
+    font-family: TW cen MT;
+    src: url(TCB_____.TTF);
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--primary-color);
+}
+
+:root {
+  --primary-color: #4e2801;
+  --second-color: #fee8d0;
+  --third-color: #cca55f;
+  --white-color: #fff;
+  --dark-color: rgb(33, 32, 78);
+  --primary-paser-color: #fff;
+}
+
+table {
+  margin: 10px 20px;
+}
+
+tr {
+  padding: 10px;
+}
+
+td {
+  max-width: 90%;
+  padding: 10px;
+}
+
+th {
+  background: var(--third-color);
+  padding: 5px 10px;
+  color: var(--white-color);
+}
+
+input {
+  padding: 5px 10px;
+}
+
+.app.active {
+  margin: auto;
+  background-image: linear-gradient(
+    92.7deg,
+    rgba(245, 212, 212, 1) 8.5%,
+    rgba(252, 251, 224, 1) 90.2%
+  );
+}
+
+.app{
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+.container {
+  position: relative;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.col {
+  padding-left: 0;
+  padding-right: 0;
+}
+.container {
+  background: var(--second-color);
+}
+.banner {
+  position: relative;
+  padding: 20px 0 60px 0;
+  width: 100%;
+}
+
+.banner:not(.active){
+  background: var(--primary-color);
+
+}
+.banner.active{
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+
+}
+.banner > img {
+  width: 100%;
+  height: 420px;
+}
+
+.banner__text {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  color: var(--third-color);
+}
+.banner button {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  border-radius: 12px;
+  width: 60px;
+  height: 20px;
+  border: none;
+  overflow: hidden;
+  outline: none;
+  background: var(--dark-color);
+}
+
+
+
+.back__ground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 30px;
+  height: 100%;
+  border-radius: 12px;
+  z-index: 2;
+  transition: all 0.3s;
+  background: var(--white-color);
+
+}
+
+.menu__bar{
+ position: absolute;
+   bottom: 0;
+   font-size: 12px;
+   left: 200px;
+   background: red;
+   w
+
+}
+
+
+.back__ground.active{
+  transform: translateX(0);
+}
+
+.back__ground:not(.active){
+  transform: translateX(100%);
+
+}
+
+
+.theme-dark i,
+.theme-light i{
+  position: relative;
+  z-index: 7;
+  padding: 5px;
+}
+
+.nav-link,
+.nav-link.active {
+  position: relative;
+  color: var(--primary-color);
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.side__bar .nav-link.active {
+  background: var(--third-color) !important;
+}
+.side__bar .nav-link img {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translate(0, -50%);
+}
+
+.side__bar .nav-link.active img {
+  display: block;
+}
+.side__bar {
+  position: relative;
+  padding: 20px 30px;
+  min-height: 369px;
+  height: 100%;
+  
+  font-family: "TwCenMT-Regular,AdobeInvisFont,MyriadPro-Regular", sans-serif;
+}
+
+.side__bar:not(.active) {
+background: var(--second-color);
+  color: var(--primary-color);
+}
+
+.side__bar.active{
+background-image: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
+
+}
+
+.sidebar__img {
+  position: absolute;
+  top: 400px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+}
+.content {
+ 
+  padding: 10px 30px;
+  min-height: 100vh;
+}
+
+.content:not(.active){
+ background: var(--white-color);
+  color: var(--primary-color);
+}
+
+.content.active{
+ background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+
+
+}
+.content__item:last-child {
+  margin-bottom: 50px;
+}
+
+.content__item__img {
+  cursor: pointer;
+  margin: 10px 5px;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s linear;
+  transform: scale(1);
+}
+
+.content__item__img:hover {
+  transform: scale(1.05);
+}
+.content__title {
+  margin: 20px 0;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--primary-color);
+  width: 100%;
+  padding: 10px 30px;
+  font-weight: 500;
+  width: 100%;
+}
+
+.footer .nav-link {
+  position: relative;
+  color: var(--third-color);
+}
+
+.footer .nav-link:not(:first-child):after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  width: 2px;
+  height: 90%;
+  background: currentColor;
+}
+
+.copy__right {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translate(0%, -50%);
+  color: var(--third-color);
+}

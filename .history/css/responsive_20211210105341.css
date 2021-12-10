@@ -1,0 +1,16 @@
+
+@media (max-width:992px){
+
+    .side__bar{
+        transition: all 03s ;
+        transform: scaleY(0);
+        transform-origin: top center;
+    }
+
+    .side__bar.active{
+        transform-origin: top center;
+        transform: scaleY(1);
+
+    }
+
+}

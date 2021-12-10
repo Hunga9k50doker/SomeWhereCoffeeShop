@@ -1,0 +1,10 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "html.format.indentHandlebars": true,
+  "html.format.maxPreserveNewLines": 80,
+  "html.format.wrapLineLength": 70,
+  "html.format.endWithNewline": true,
+  "editor.formatOnType": true
+}

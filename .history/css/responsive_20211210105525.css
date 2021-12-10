@@ -1,0 +1,19 @@
+
+@media (max-width:992px){
+
+    .menu__bar{
+        display:block;
+    }
+    .side__bar:not(.active){
+        transition: all 03s ;
+        transform: scaleY(0);
+        transform-origin: top center;
+    }
+
+    .side__bar.active{
+        transform-origin: top center;
+        transform: scaleY(1);
+
+    }
+
+}

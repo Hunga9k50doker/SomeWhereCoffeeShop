@@ -1,0 +1,8 @@
+
+@media (max-width:992px){
+
+    .side__bar{
+        transform: scaleY(0);
+        transform-origin: ;
+    }
+}
